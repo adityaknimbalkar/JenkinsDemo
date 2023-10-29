@@ -8,11 +8,15 @@ public class test {
     public int addAndReturn(){
         return this.a+this.b;
     }
+    public static void display(int data){
+
+        System.out.println("this is Ans:-"+data);
+    }
 
     public static  void main(String args[]){
 
         test t=new test(10,2222);
-        System.out.println(t.addAndReturn());
-        System.out.println("this is test function");
+       display(t.addAndReturn());
+
     }
 }
